@@ -1,0 +1,91 @@
+.dashboard-select {
+  width: auto;
+  max-width: min(100%, 20rem);
+}
+
+.dashboard-widget-header {
+  min-height: 2.75rem;
+  padding: .5rem .75rem;
+}
+
+.dashboard-widget-header > svg {
+  flex: none;
+  color: var(--tblr-primary);
+}
+
+.dashboard-widget-header .card-title {
+  min-width: 0;
+  margin-bottom: 0;
+}
+
+.dashboard-widget-body {
+  min-height: 0;
+  padding: .625rem .75rem;
+  overflow: auto;
+}
+
+.dashboard-drag-handle {
+  flex: none;
+  cursor: grab;
+  touch-action: none;
+}
+
+.dashboard-drag-handle:active {
+  cursor: grabbing;
+}
+
+.dashboard-widget-actions {
+  flex: none;
+}
+
+.dashboard-widget-actions .btn {
+  min-width: 1.75rem;
+  padding: .25rem;
+}
+
+.dashboard-chart {
+  position: relative;
+  min-height: 3.5rem;
+}
+
+.dashboard-chart-renderer,
+.dashboard-chart-empty {
+  position: absolute;
+  inset: 0;
+}
+
+.dashboard-chart-empty {
+  display: grid;
+  place-items: center;
+  border: 1px dashed var(--tblr-border-color);
+  border-radius: var(--tblr-border-radius);
+  background: var(--tblr-bg-surface-secondary);
+}
+
+.dashboard-dialog {
+  width: min(33rem, calc(100vw - 2rem));
+  max-height: calc(100dvh - 2rem);
+  padding: 0;
+  color: var(--tblr-body-color);
+  background: var(--tblr-bg-surface);
+  border: 1px solid var(--tblr-border-color);
+  border-radius: var(--tblr-border-radius-lg);
+  box-shadow: var(--tblr-box-shadow-lg);
+}
+
+.dashboard-dialog::backdrop {
+  background: rgba(0, 0, 0, .55);
+}
+
+.react-grid-item.react-grid-placeholder {
+  background: var(--tblr-primary);
+}
+
+.react-grid-item > .react-resizable-handle::after {
+  border-color: var(--tblr-secondary);
+}
+
+.dashboard-grid-editing .react-grid-item > .react-resizable-handle {
+  opacity: 1;
+  touch-action: none;
+}

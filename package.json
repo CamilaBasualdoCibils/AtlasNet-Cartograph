@@ -1,0 +1,14 @@
+{
+  "name": "cartograph",
+  "private": true,
+  "workspaces": [
+    "web"
+  ],
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:web": "npm run dev --workspace cartograph-web --",
+    "build": "npm run build --workspace cartograph-web",
+    "test": "npm run test --workspace cartograph-web",
+    "start": "node scripts/dev.mjs --production"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Cartograph: Dev",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/dev.mjs",
+      "cwd": "${workspaceFolder}",
+      "env": { "ATLASNET_CONTROL_PANEL_URL": "ws://127.0.0.1:8080" },
+      "console": "integratedTerminal",
+      "autoAttachChildProcesses": false,
+      "killBehavior": "polite",
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}
